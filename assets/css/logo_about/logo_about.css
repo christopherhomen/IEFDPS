@@ -1,0 +1,17 @@
+/* Puedes poner esto en tu archivo CSS o dentro de un <style> en el <head> */
+@media (max-width: 576px) {
+  .logo-responsive {
+    max-width: 100% !important; /* reduce el tamaño en móviles */
+  }
+}
+
+@media (min-width: 577px) {
+  .logo-responsive {
+    max-width: 100%;
+    
+  }
+
+  .ensayo{
+    max-height: 89vh;
+  }
+}
