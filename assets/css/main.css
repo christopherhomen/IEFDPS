@@ -8223,3 +8223,14 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* Custom spacing for Adjudication Section to avoid image overlap */
+.adjudication-spacing {
+  margin-top: 50px;
+  position: relative;
+  z-index: 20;
+}
+@media (min-width: 992px) {
+  .adjudication-spacing {
+    margin-top: 250px;
+  }
+}
