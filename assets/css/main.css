@@ -8234,3 +8234,29 @@ section,
     margin-top: 250px;
   }
 }
+
+/* Mobile Text Alignment Fixes */
+@media (max-width: 768px) {
+  .section-title h2, .section-title p {
+    text-align: center;
+  }
+  .about .display-6, .about .lead, .about .stat-box {
+    text-align: center;
+  }
+  .about .stat-box {
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .about .d-flex.flex-wrap {
+    justify-content: center;
+  }
+  .adjudication-spacing {
+    text-align: center;
+  }
+  .adjudication-spacing .d-flex {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+}
