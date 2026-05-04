@@ -8864,59 +8864,79 @@ section,
   border: 1px solid rgba(255,255,255,0.3);
 }
 .students-life-img .img-overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.3) 60%, transparent 100%) !important;
-  border-radius: 0 0 40px 40px;
-  padding: 50px !important;
-  backdrop-filter: blur(2px);
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(25px) !important;
+  -webkit-backdrop-filter: blur(25px) !important;
+  border-radius: 0 0 40px 40px !important;
+  padding: 40px !important;
+  border-top: 1px solid rgba(255,255,255,0.7) !important;
 }
 .students-life-img .img-overlay h3 {
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 800;
+  font-size: 1.8rem;
   letter-spacing: -1px;
+  color: var(--heading-color) !important;
+  margin-bottom: 20px;
+}
+.students-life-img .explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--accent-color) !important;
+  transition: all 0.3s ease;
+}
+.students-life-img .explore-btn:hover {
+  transform: translateX(6px);
+  color: color-mix(in srgb, var(--accent-color), #000 20%) !important;
 }
 .student-activity-item {
-  background: rgba(255,255,255,0.7);
-  backdrop-filter: blur(20px);
-  padding: 30px;
-  border-radius: 30px;
-  border: 1px solid rgba(255,255,255,0.8);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.03);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(30px);
+  padding: 35px 30px;
+  border-radius: 35px;
+  border: 1px solid rgba(255,255,255,0.9);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.04), inset 0 0 0 1px rgba(255,255,255,0.5);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   height: 100%;
 }
 .student-activity-item:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.08);
-  background: rgba(255,255,255,0.95);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08), inset 0 0 0 1px rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.9);
 }
 .student-activity-item .icon-box {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, rgba(0, 176, 155, 0.1) 0%, rgba(0, 176, 155, 0.05) 100%);
+  width: 65px;
+  height: 65px;
+  background: #ffffff;
   border-radius: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
-  box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-  transition: transform 0.4s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.03);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .student-activity-item:hover .icon-box {
-  transform: scale(1.1) rotate(5deg);
-  background: linear-gradient(135deg, var(--accent-color) 0%, #00b09b 100%);
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 176, 155, 0.15);
 }
 .student-activity-item .icon-box i {
-  font-size: 32px;
+  font-size: 28px;
   color: var(--accent-color);
   transition: color 0.4s ease;
 }
-.student-activity-item:hover .icon-box i {
-  color: #fff;
-}
 .student-activity-item h4 {
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   letter-spacing: -0.5px;
+  margin-bottom: 15px;
 }
 
 /* 3. Testimonials Premium Pro */
