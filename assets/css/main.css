@@ -9361,3 +9361,165 @@ section,
   background: rgba(255, 255, 255, 0.25);
   transform: translateY(-3px);
 }
+
+/* Glowing Badge for SEMANA DE LA SALUD 2026 */
+.news-date-glow {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 60%, #388e3c 100%) !important;
+  color: #ffd700 !important;
+  font-weight: 800 !important;
+  border: 1.5px solid #ffd700 !important;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 1.5px !important;
+  padding: 6px 16px !important;
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  animation: goldGlowPulse 2.5s infinite alternate;
+}
+
+.news-date-glow::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.7) 50%,
+    transparent 70%
+  );
+  transform: rotate(25deg);
+  animation: shineLightPass 3.5s infinite;
+}
+
+@keyframes shineLightPass {
+  0% { left: -100%; }
+  30% { left: 100%; }
+  100% { left: 100%; }
+}
+
+@keyframes goldGlowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    border-color: rgba(255, 215, 0, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 22px rgba(255, 215, 0, 0.85), 0 0 8px rgba(255, 255, 255, 0.6);
+    border-color: #ffffff;
+  }
+}
+
+/* Hero Event Pill - Semana de Salud 2026 */
+.hero-event-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(13, 59, 30, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid #ffd700;
+  padding: 8px 18px;
+  border-radius: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.92rem;
+  margin-bottom: 22px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 215, 0, 0.35);
+  transition: all 0.35s ease;
+  animation: heroPillPulse 3s infinite alternate;
+}
+
+.hero-event-pill:hover {
+  background: rgba(27, 94, 32, 0.95);
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.6);
+  border-color: #ffffff;
+}
+
+.hero-event-pill .pill-badge {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
+  color: #0d3b1e;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-event-pill .pill-text strong {
+  color: #ffd700;
+}
+
+@keyframes heroPillPulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 12px rgba(255, 215, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5), 0 0 24px rgba(255, 215, 0, 0.75);
+  }
+}
+
+/* Highlighted News Card for Semana de Salud 2026 */
+.news-card-highlighted {
+  border: 2px solid #ffd700 !important;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3), 0 5px 15px rgba(13, 59, 30, 0.2) !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.news-card-highlighted:hover {
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.5), 0 8px 25px rgba(13, 59, 30, 0.3) !important;
+  transform: translateY(-5px);
+}
+
+.featured-ribbon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(135deg, #ffd700 0%, #ff9800 100%);
+  color: #0d3b1e;
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-highlight-gold {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%) !important;
+  color: #0d3b1e !important;
+  font-weight: 700 !important;
+  padding: 8px 18px !important;
+  border-radius: 8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3) !important;
+  text-decoration: none !important;
+}
+
+.btn-highlight-gold:hover {
+  background: linear-gradient(135deg, #ffea00 0%, #ffc107 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.5) !important;
+}
+
+/* Enhanced Cert Portal Widget Highlight */
+.cert-portal-widget-highlight {
+  border: 2px solid #ffd700 !important;
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.35), 0 10px 30px rgba(13, 59, 30, 0.4) !important;
+  background: linear-gradient(135deg, #0a3319 0%, #1b5e20 50%, #0d3b1e 100%) !important;
+}
