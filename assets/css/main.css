@@ -9155,3 +9155,209 @@ section,
     font-size: 0.9rem !important;
   }
 }
+
+/*--------------------------------------------------------------
+# Certificate Digital Portal - Custom Cool Styles
+--------------------------------------------------------------*/
+.navmenu .nav-cert-btn {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+  color: #ffffff !important;
+  padding: 8px 16px !important;
+  border-radius: 20px;
+  font-weight: 600 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.35);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  margin-left: 8px;
+}
+
+.navmenu .nav-cert-btn:hover {
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.5);
+  color: #ffffff !important;
+}
+
+.navmenu .nav-cert-btn i {
+  font-size: 1.1rem;
+  color: #ffd700;
+}
+
+.navmenu .nav-cert-btn .badge-cert {
+  background: #ffd700;
+  color: #1b5e20;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  animation: pulseBadge 2s infinite;
+}
+
+@keyframes pulseBadge {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); box-shadow: 0 0 8px rgba(255, 215, 0, 0.6); }
+  100% { transform: scale(1); }
+}
+
+/* Novedades Special Certificate Card */
+.news-card.cert-special-card {
+  border: 2px solid rgba(46, 125, 50, 0.3);
+  box-shadow: 0 10px 30px rgba(46, 125, 50, 0.15);
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.news-card.cert-special-card::before {
+  content: 'OFICIAL';
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: #ffd700;
+  color: #1b5e20;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 30px;
+  transform: rotate(45deg);
+  z-index: 5;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.cert-special-card .btn-cert-primary {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.cert-special-card .btn-cert-primary:hover {
+  background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.4);
+}
+
+.cert-special-card .btn-cert-outline {
+  border: 1.5px solid #2e7d32;
+  color: #1b5e20 !important;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.cert-special-card .btn-cert-outline:hover {
+  background: rgba(46, 125, 50, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Certificate Banner Widget for Students Life */
+.cert-portal-widget {
+  background: linear-gradient(135deg, #0d3b1e 0%, #1b5e20 50%, #2e7d32 100%);
+  border-radius: 24px;
+  padding: 40px 30px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(13, 59, 30, 0.3);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cert-portal-widget::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cert-portal-widget .widget-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.cert-portal-widget h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cert-portal-widget p {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin-bottom: 25px;
+}
+
+.cert-portal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.cert-portal-actions .btn-widget-gold {
+  background: linear-gradient(135deg, #ffd700 0%, #ffb300 100%);
+  color: #0d3b1e !important;
+  font-weight: 700;
+  padding: 12px 26px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.cert-portal-actions .btn-widget-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 215, 0, 0.5);
+  background: linear-gradient(135deg, #ffea00 0%, #ffc107 100%);
+}
+
+.cert-portal-actions .btn-widget-glass {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.cert-portal-actions .btn-widget-glass:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-3px);
+}
